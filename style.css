@@ -1,0 +1,32 @@
+div {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    box-shadow: 3px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    font-size: 20px;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    background: gray;
+    border: transparent;
+}
+
+button::before {
+    content: 'Pasar por encima';
+}
+
+button:hover::before {
+    content: 'Hecho';
+
+}
+
+button:hover {
+    background-color: #5ED076;
+    color: white;
+}
